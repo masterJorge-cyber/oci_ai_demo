@@ -1,0 +1,18 @@
+[2025-08-03 02:18:15,733] [automl.xengine] Local ProcessPool execution (n_jobs=1)
+[2025-08-03 02:18:20,767] [automl.pipeline] Random state (7) is used for model builds
+[2025-08-03 02:18:20,790] [automl.pipeline] Dataset shape: (34189, 15)
+[2025-08-03 02:18:20,799] [automl.pipeline] Running Auto-Preprocessing
+[2025-08-03 02:18:21,005] [automl.pipeline] Preprocessing completed. Updated Dataset shape: (34189, 16), cv: 5
+[2025-08-03 02:18:21,137] [automl.pipeline] SVC, KNeighborsClassifier are disabled for datasets with > 10K samples or > 1K features
+[2025-08-03 02:18:21,138] [automl.pipeline] Running Model Selection
+[2025-08-03 02:18:55,288] [automl.pipeline] Model Selection completed. Selected model: ['DecisionTreeClassifier']
+[2025-08-03 02:18:55,290] [automl.pipeline] Running Adaptive Sampling. Dataset Shape: (34189, 16), Valid Shape: None, CV: 5, Class counts: [26046  8143]
+[2025-08-03 02:18:56,346] [automl.pipeline] Adaptive Sampling Completed. Updated Dataset Shape: (34189, 16), Valid Shape: None, CV: [(6738, 6838), (6738, 6838), (6738, 6838), (6738, 6838), (6738, 6837)], Class counts: [26046  8143]
+[2025-08-03 02:18:56,347] [automl.pipeline] Starting Feature Selection 0. Dataset Shape: (34189, 16)
+[2025-08-03 02:19:00,395] [automl.pipeline] Feature Selection 0 completed. Updated Dataset shape: (34189, 1)
+[2025-08-03 02:19:00,402] [automl.pipeline] Tuning DecisionTreeClassifier
+[2025-08-03 02:19:02,300] [automl.tune] WARNING: No tasks queued but search ({'class_weight': True, 'max_features': False, 'min_samples_leaf': True, 'min_samples_split': True}) is not done.. quiting
+[2025-08-03 02:19:02,302] [automl.pipeline] Tuning completed. Best params: {'class_weight': 'balanced', 'max_features': 1.0, 'min_samples_leaf': 0.000625, 'min_samples_split': 0.00125}
+[2025-08-03 02:19:02,323] [automl.pipeline] (Re)fitting Pipeline
+[2025-08-03 02:19:02,519] [automl.xengine] Local ProcessPool execution (n_jobs=1)
+[2025-08-03 02:19:02,537] [automl.pipeline] AutoML completed. Time taken - 41.609 sec
